@@ -1,0 +1,22 @@
+import java.util.*;
+class replacing {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string :");
+        String s=sc.nextLine();// the  string to be checked for the particular letter that has to be replaced 
+        System.out.println("Enter the value to be replaced");
+        char value=sc.next.charAt(0);// value to be replaced
+        System.out.println("Enter the value to be added in thre place of the replaced value");
+        char toadd=sc.next.charAt(0);
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==value){
+                s.charAt(i)=toadd;// replacing operation
+            }else{
+                continue;
+            }
+        }
+      System.out.println("The String after replacement is:"+s);
+      sc.close();
+    }
+    
+}
